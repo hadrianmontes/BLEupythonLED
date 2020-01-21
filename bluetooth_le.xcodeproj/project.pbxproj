@@ -23,8 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		40365F3A23D774DE0025FCA7 /* bluetooth.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bluetooth.py; sourceTree = "<group>"; };
 		4036624B23D4FC620097A2B1 /* bluetooth_le */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bluetooth_le; sourceTree = BUILT_PRODUCTS_DIR; };
 		4036624E23D4FC620097A2B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		40FCBBC423D775FA00BF10C0 /* led_services.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = led_services.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +40,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40365F3923D774C30025FCA7 /* upython */ = {
+			isa = PBXGroup;
+			children = (
+				40365F3A23D774DE0025FCA7 /* bluetooth.py */,
+				40FCBBC423D775FA00BF10C0 /* led_services.py */,
+			);
+			name = upython;
+			path = bluetooth_le/upython;
+			sourceTree = "<group>";
+		};
 		4036624223D4FC620097A2B1 = {
 			isa = PBXGroup;
 			children = (
+				40365F3923D774C30025FCA7 /* upython */,
 				4036624D23D4FC620097A2B1 /* bluetooth_le */,
 				4036624C23D4FC620097A2B1 /* Products */,
 			);

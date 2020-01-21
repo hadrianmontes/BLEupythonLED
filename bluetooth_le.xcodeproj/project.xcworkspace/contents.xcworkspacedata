@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:bluetooth_le.xcodeproj">
+      location = "group:../upython/bluetooth.py">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
