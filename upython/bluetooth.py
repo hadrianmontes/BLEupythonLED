@@ -9,7 +9,7 @@ SCL = 4
 blue = bluetooth.Bluetooth()
 blue.active(True)
 blue.advertise(100, "uweather")
-print("HOLA")
+print("UHOLA")
 led = LedServices(blue, 30, 4)
 print("hola")
 

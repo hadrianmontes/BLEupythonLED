@@ -1,4 +1,7 @@
-import bluetooth, neopixel, machine, utime
+import bluetooth
+import neopixel
+import machine
+import utime
 
 class LedServices():
     SLEEP = 0.5
@@ -75,7 +78,7 @@ class LedServices():
         self.changemode()
         
     def still(self):
-        print("Starting still")
+        print("Starting Still")
         color = (0, 0 ,0)
         while self.characteristics[1][2].read() == b"2":
             colors = self.characteristics[2][2].read()
