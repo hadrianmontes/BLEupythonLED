@@ -7,13 +7,11 @@
 //
 
 import Foundation
-
+import ble_backend
 
 print("Hello, World!")
-var delegate = UPythonCommunicator()
-delegate.scan()
-while delegate.uled.peripheral == nil{
-}
+var delegate = ble_backend.UPythonCommunicator()
+
 //print(delegate.uled.peripheral ?? "nil")
 delegate.connect_and_wait()
 //print(delegate.uled.services)

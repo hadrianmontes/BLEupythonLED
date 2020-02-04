@@ -1,0 +1,11 @@
+framework module ble_backend {
+  umbrella header "ble_backend.h"
+
+  export *
+  module * { export * }
+}
+
+module ble_backend.Swift {
+    header "ble_backend-Swift.h"
+    requires objc
+}

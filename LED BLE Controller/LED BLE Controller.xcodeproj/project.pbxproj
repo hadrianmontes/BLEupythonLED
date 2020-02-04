@@ -13,6 +13,8 @@
 		4053861E23DA2C8B003182B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4053861D23DA2C8B003182B4 /* Preview Assets.xcassets */; };
 		4053862123DA2C8B003182B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4053861F23DA2C8B003182B4 /* Main.storyboard */; };
 		4053862D23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053862C23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift */; };
+		4061655B23EA32A7006ECAB7 /* ble_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4061655923EA32A2006ECAB7 /* ble_backend.framework */; };
+		4061655C23EA32A7006ECAB7 /* ble_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4061655923EA32A2006ECAB7 /* ble_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4061655C23EA32A7006ECAB7 /* ble_backend.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +53,7 @@
 		4053862823DA2C8B003182B4 /* LED BLE ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED BLE ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4053862C23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_BLE_ControllerTests.swift; sourceTree = "<group>"; };
 		4053862E23DA2C8B003182B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4061655923EA32A2006ECAB7 /* ble_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_backend.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4061655B23EA32A7006ECAB7 /* ble_backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +128,7 @@
 		4056369223EA1C9000B7265E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4061655923EA32A2006ECAB7 /* ble_backend.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,6 +394,10 @@
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,6 +421,10 @@
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

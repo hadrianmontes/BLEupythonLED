@@ -8,12 +8,14 @@
 
 import Cocoa
 import SwiftUI
+import ble_backend
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
-    var delegate = UPythonDelegator()
+    var delegate = ble_backend.UPythonCommunicator()
+    var statusBarItem: NSStatusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -26,6 +28,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
         window.center()
+        print("test")
+        delegate.connect_and_wait()
+        print("test")
+        var data1 = delegate.uled.read(service: "0001", characteristic: "0001")
+        guard let statusButton = statusBarItem.button else { return }
+        statusButton.title = String(decoding: data1, as: UTF8.self)
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)

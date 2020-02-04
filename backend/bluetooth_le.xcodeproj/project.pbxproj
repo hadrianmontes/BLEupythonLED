@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4036624F23D4FC620097A2B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036624E23D4FC620097A2B1 /* main.swift */; };
 		403811C923EA204600213EC3 /* ble_backend.h in Headers */ = {isa = PBXBuildFile; fileRef = 403811C723EA204600213EC3 /* ble_backend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4056369123EA18E400B7265E /* ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056369023EA18E400B7265E /* ble.swift */; };
+		4061653823EA2BCE006ECAB7 /* ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056369023EA18E400B7265E /* ble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 		403811C523EA204600213EC3 /* ble_backend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ble_backend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		403811C723EA204600213EC3 /* ble_backend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ble_backend.h; sourceTree = "<group>"; };
 		403811C823EA204600213EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4056369023EA18E400B7265E /* ble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ble.swift; sourceTree = "<group>"; };
+		4056369023EA18E400B7265E /* ble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ble.swift; path = ../bluetooth_le/ble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				4036624E23D4FC620097A2B1 /* main.swift */,
-				4056369023EA18E400B7265E /* ble.swift */,
 			);
 			path = bluetooth_le;
 			sourceTree = "<group>";
@@ -81,6 +80,7 @@
 		403811C623EA204600213EC3 /* ble_backend */ = {
 			isa = PBXGroup;
 			children = (
+				4056369023EA18E400B7265E /* ble.swift */,
 				403811C723EA204600213EC3 /* ble_backend.h */,
 				403811C823EA204600213EC3 /* Info.plist */,
 			);
@@ -189,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4036624F23D4FC620097A2B1 /* main.swift in Sources */,
-				4056369123EA18E400B7265E /* ble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4061653823EA2BCE006ECAB7 /* ble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

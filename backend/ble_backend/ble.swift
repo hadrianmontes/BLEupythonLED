@@ -15,7 +15,7 @@ public class UPythonCommunicator: NSObject{
     let TargetServiceCBUUID = CBUUID(string: "0001")
     public var uled = ULed()
 
-    public override init() {
+    override init() {
         super.init();
         queue = DispatchQueue(label: "test")
         central_manager = CBCentralManager(delegate: self, queue:queue);
@@ -25,28 +25,9 @@ public class UPythonCommunicator: NSObject{
 
     public func scan()
     {
-        switch central_manager.state {
-        case .unknown:
-            print("central.state is .unknown")
-        case .resetting:
-            print("central.state is .resseting")
-        case .unsupported:
-            print("central.state is .unsuported")
-        case .unauthorized:
-            print("central.state is .unnouthorized")
-        case .poweredOff:
-            print("central.state is .poweredOff")
-        case .poweredOn:
-            print("central.state is .poweredOn")
-            print(queue.label)
-        @unknown default:
-            fatalError()
-        }
         if central_manager.state == CBManagerState.poweredOn{
-            print("PoweredOn")
             central_manager.scanForPeripherals(withServices: nil)
         }
-
     }
 
     public func connect() {
@@ -67,10 +48,6 @@ public class UPythonCommunicator: NSObject{
     }
 
     public func connect_and_wait(){
-        print("Start_scanning")
-        scan()
-        while uled.peripheral == nil{
-        }
         connect()
         while !uled.discovered{
 
@@ -142,7 +119,7 @@ extension UPythonCommunicator: CBPeripheralDelegate{
 
 
 public class ULed{
-    public var peripheral: CBPeripheral!
+    var peripheral: CBPeripheral!
     var read_values: Int = 0
     var read_characteristics = 0
     public var services: [CBUUID : [CBUUID : CBCharacteristic?]] = [
