@@ -7,65 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4053861723DA2C87003182B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053861623DA2C87003182B4 /* AppDelegate.swift */; };
-		4053861923DA2C87003182B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053861823DA2C87003182B4 /* ContentView.swift */; };
-		4053861B23DA2C8B003182B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4053861A23DA2C8B003182B4 /* Assets.xcassets */; };
-		4053861E23DA2C8B003182B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4053861D23DA2C8B003182B4 /* Preview Assets.xcassets */; };
-		4053862123DA2C8B003182B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4053861F23DA2C8B003182B4 /* Main.storyboard */; };
-		4053862D23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053862C23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift */; };
-		4061655B23EA32A7006ECAB7 /* ble_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4061655923EA32A2006ECAB7 /* ble_backend.framework */; };
-		4061655C23EA32A7006ECAB7 /* ble_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4061655923EA32A2006ECAB7 /* ble_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		403CCE4B23EB6562000B81D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CCE4A23EB6562000B81D0 /* AppDelegate.swift */; };
+		403CCE4D23EB6562000B81D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CCE4C23EB6562000B81D0 /* ViewController.swift */; };
+		403CCE4F23EB6566000B81D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE4E23EB6566000B81D0 /* Assets.xcassets */; };
+		403CCE5223EB6566000B81D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE5023EB6566000B81D0 /* Main.storyboard */; };
+		403CCE5E23EB6567000B81D0 /* LED_BLE_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4053862923DA2C8B003182B4 /* PBXContainerItemProxy */ = {
+		403CCE5A23EB6566000B81D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4053860B23DA2C87003182B4 /* Project object */;
+			containerPortal = 403CCE3F23EB6562000B81D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4053861223DA2C87003182B4;
+			remoteGlobalIDString = 403CCE4623EB6562000B81D0;
 			remoteInfo = "LED BLE Controller";
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		403811D023EA21EC00213EC3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4061655C23EA32A7006ECAB7 /* ble_backend.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		4053861323DA2C87003182B4 /* LED BLE Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LED BLE Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4053861623DA2C87003182B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4053861823DA2C87003182B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4053861A23DA2C8B003182B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4053861D23DA2C8B003182B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4053862023DA2C8B003182B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4053862223DA2C8B003182B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4053862323DA2C8B003182B4 /* LED_BLE_Controller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LED_BLE_Controller.entitlements; sourceTree = "<group>"; };
-		4053862823DA2C8B003182B4 /* LED BLE ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED BLE ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4053862C23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_BLE_ControllerTests.swift; sourceTree = "<group>"; };
-		4053862E23DA2C8B003182B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4061655923EA32A2006ECAB7 /* ble_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_backend.framework; sourceTree = "<group>"; };
+		403CCE4723EB6562000B81D0 /* LED BLE Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LED BLE Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		403CCE4A23EB6562000B81D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		403CCE4C23EB6562000B81D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		403CCE4E23EB6566000B81D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		403CCE5123EB6566000B81D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		403CCE5323EB6566000B81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403CCE5423EB6566000B81D0 /* LED_BLE_Controller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LED_BLE_Controller.entitlements; sourceTree = "<group>"; };
+		403CCE5923EB6566000B81D0 /* LED BLE ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED BLE ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_BLE_ControllerTests.swift; sourceTree = "<group>"; };
+		403CCE5F23EB6567000B81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4053861023DA2C87003182B4 /* Frameworks */ = {
+		403CCE4423EB6562000B81D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4061655B23EA32A7006ECAB7 /* ble_backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4053862523DA2C8B003182B4 /* Frameworks */ = {
+		403CCE5623EB6566000B81D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,75 +55,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4053860A23DA2C87003182B4 = {
+		403CCE3E23EB6562000B81D0 = {
 			isa = PBXGroup;
 			children = (
-				4053861523DA2C87003182B4 /* LED BLE Controller */,
-				4053862B23DA2C8B003182B4 /* LED BLE ControllerTests */,
-				4053861423DA2C87003182B4 /* Products */,
-				4056369223EA1C9000B7265E /* Frameworks */,
+				403CCE4923EB6562000B81D0 /* LED BLE Controller */,
+				403CCE5C23EB6566000B81D0 /* LED BLE ControllerTests */,
+				403CCE4823EB6562000B81D0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4053861423DA2C87003182B4 /* Products */ = {
+		403CCE4823EB6562000B81D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4053861323DA2C87003182B4 /* LED BLE Controller.app */,
-				4053862823DA2C8B003182B4 /* LED BLE ControllerTests.xctest */,
+				403CCE4723EB6562000B81D0 /* LED BLE Controller.app */,
+				403CCE5923EB6566000B81D0 /* LED BLE ControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4053861523DA2C87003182B4 /* LED BLE Controller */ = {
+		403CCE4923EB6562000B81D0 /* LED BLE Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4053861623DA2C87003182B4 /* AppDelegate.swift */,
-				4053861823DA2C87003182B4 /* ContentView.swift */,
-				4053861A23DA2C8B003182B4 /* Assets.xcassets */,
-				4053861F23DA2C8B003182B4 /* Main.storyboard */,
-				4053862223DA2C8B003182B4 /* Info.plist */,
-				4053862323DA2C8B003182B4 /* LED_BLE_Controller.entitlements */,
-				4053861C23DA2C8B003182B4 /* Preview Content */,
+				403CCE4A23EB6562000B81D0 /* AppDelegate.swift */,
+				403CCE4C23EB6562000B81D0 /* ViewController.swift */,
+				403CCE4E23EB6566000B81D0 /* Assets.xcassets */,
+				403CCE5023EB6566000B81D0 /* Main.storyboard */,
+				403CCE5323EB6566000B81D0 /* Info.plist */,
+				403CCE5423EB6566000B81D0 /* LED_BLE_Controller.entitlements */,
 			);
 			path = "LED BLE Controller";
 			sourceTree = "<group>";
 		};
-		4053861C23DA2C8B003182B4 /* Preview Content */ = {
+		403CCE5C23EB6566000B81D0 /* LED BLE ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				4053861D23DA2C8B003182B4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		4053862B23DA2C8B003182B4 /* LED BLE ControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				4053862C23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift */,
-				4053862E23DA2C8B003182B4 /* Info.plist */,
+				403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */,
+				403CCE5F23EB6567000B81D0 /* Info.plist */,
 			);
 			path = "LED BLE ControllerTests";
-			sourceTree = "<group>";
-		};
-		4056369223EA1C9000B7265E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4061655923EA32A2006ECAB7 /* ble_backend.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4053861223DA2C87003182B4 /* LED BLE Controller */ = {
+		403CCE4623EB6562000B81D0 /* LED BLE Controller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4053863123DA2C8B003182B4 /* Build configuration list for PBXNativeTarget "LED BLE Controller" */;
+			buildConfigurationList = 403CCE6223EB6567000B81D0 /* Build configuration list for PBXNativeTarget "LED BLE Controller" */;
 			buildPhases = (
-				4053860F23DA2C87003182B4 /* Sources */,
-				4053861023DA2C87003182B4 /* Frameworks */,
-				4053861123DA2C87003182B4 /* Resources */,
-				403811D023EA21EC00213EC3 /* Embed Frameworks */,
+				403CCE4323EB6562000B81D0 /* Sources */,
+				403CCE4423EB6562000B81D0 /* Frameworks */,
+				403CCE4523EB6562000B81D0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -151,47 +112,47 @@
 			);
 			name = "LED BLE Controller";
 			productName = "LED BLE Controller";
-			productReference = 4053861323DA2C87003182B4 /* LED BLE Controller.app */;
+			productReference = 403CCE4723EB6562000B81D0 /* LED BLE Controller.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4053862723DA2C8B003182B4 /* LED BLE ControllerTests */ = {
+		403CCE5823EB6566000B81D0 /* LED BLE ControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4053863423DA2C8B003182B4 /* Build configuration list for PBXNativeTarget "LED BLE ControllerTests" */;
+			buildConfigurationList = 403CCE6523EB6567000B81D0 /* Build configuration list for PBXNativeTarget "LED BLE ControllerTests" */;
 			buildPhases = (
-				4053862423DA2C8B003182B4 /* Sources */,
-				4053862523DA2C8B003182B4 /* Frameworks */,
-				4053862623DA2C8B003182B4 /* Resources */,
+				403CCE5523EB6566000B81D0 /* Sources */,
+				403CCE5623EB6566000B81D0 /* Frameworks */,
+				403CCE5723EB6566000B81D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4053862A23DA2C8B003182B4 /* PBXTargetDependency */,
+				403CCE5B23EB6566000B81D0 /* PBXTargetDependency */,
 			);
 			name = "LED BLE ControllerTests";
 			productName = "LED BLE ControllerTests";
-			productReference = 4053862823DA2C8B003182B4 /* LED BLE ControllerTests.xctest */;
+			productReference = 403CCE5923EB6566000B81D0 /* LED BLE ControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4053860B23DA2C87003182B4 /* Project object */ = {
+		403CCE3F23EB6562000B81D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Hadrián Montes Campos";
 				TargetAttributes = {
-					4053861223DA2C87003182B4 = {
+					403CCE4623EB6562000B81D0 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					4053862723DA2C8B003182B4 = {
+					403CCE5823EB6566000B81D0 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 4053861223DA2C87003182B4;
+						TestTargetID = 403CCE4623EB6562000B81D0;
 					};
 				};
 			};
-			buildConfigurationList = 4053860E23DA2C87003182B4 /* Build configuration list for PBXProject "LED BLE Controller" */;
+			buildConfigurationList = 403CCE4223EB6562000B81D0 /* Build configuration list for PBXProject "LED BLE Controller" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,29 +160,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 4053860A23DA2C87003182B4;
-			productRefGroup = 4053861423DA2C87003182B4 /* Products */;
+			mainGroup = 403CCE3E23EB6562000B81D0;
+			productRefGroup = 403CCE4823EB6562000B81D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4053861223DA2C87003182B4 /* LED BLE Controller */,
-				4053862723DA2C8B003182B4 /* LED BLE ControllerTests */,
+				403CCE4623EB6562000B81D0 /* LED BLE Controller */,
+				403CCE5823EB6566000B81D0 /* LED BLE ControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4053861123DA2C87003182B4 /* Resources */ = {
+		403CCE4523EB6562000B81D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4053862123DA2C8B003182B4 /* Main.storyboard in Resources */,
-				4053861E23DA2C8B003182B4 /* Preview Assets.xcassets in Resources */,
-				4053861B23DA2C8B003182B4 /* Assets.xcassets in Resources */,
+				403CCE4F23EB6566000B81D0 /* Assets.xcassets in Resources */,
+				403CCE5223EB6566000B81D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4053862623DA2C8B003182B4 /* Resources */ = {
+		403CCE5723EB6566000B81D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,38 +191,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4053860F23DA2C87003182B4 /* Sources */ = {
+		403CCE4323EB6562000B81D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4053861923DA2C87003182B4 /* ContentView.swift in Sources */,
-				4053861723DA2C87003182B4 /* AppDelegate.swift in Sources */,
+				403CCE4D23EB6562000B81D0 /* ViewController.swift in Sources */,
+				403CCE4B23EB6562000B81D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4053862423DA2C8B003182B4 /* Sources */ = {
+		403CCE5523EB6566000B81D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4053862D23DA2C8B003182B4 /* LED_BLE_ControllerTests.swift in Sources */,
+				403CCE5E23EB6567000B81D0 /* LED_BLE_ControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4053862A23DA2C8B003182B4 /* PBXTargetDependency */ = {
+		403CCE5B23EB6566000B81D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4053861223DA2C87003182B4 /* LED BLE Controller */;
-			targetProxy = 4053862923DA2C8B003182B4 /* PBXContainerItemProxy */;
+			target = 403CCE4623EB6562000B81D0 /* LED BLE Controller */;
+			targetProxy = 403CCE5A23EB6566000B81D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4053861F23DA2C8B003182B4 /* Main.storyboard */ = {
+		403CCE5023EB6566000B81D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4053862023DA2C8B003182B4 /* Base */,
+				403CCE5123EB6566000B81D0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -270,7 +230,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4053862F23DA2C8B003182B4 /* Debug */ = {
+		403CCE6023EB6567000B81D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		4053863023DA2C8B003182B4 /* Release */ = {
+		403CCE6123EB6567000B81D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,61 +343,47 @@
 			};
 			name = Release;
 		};
-		4053863223DA2C8B003182B4 /* Debug */ = {
+		403CCE6323EB6567000B81D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "LED BLE Controller/LED_BLE_Controller.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"LED BLE Controller/Preview Content\"";
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "Hadrian.LED-BLE-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		4053863323DA2C8B003182B4 /* Release */ = {
+		403CCE6423EB6567000B81D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "LED BLE Controller/LED_BLE_Controller.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"LED BLE Controller/Preview Content\"";
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "Hadrian.LED-BLE-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		4053863523DA2C8B003182B4 /* Debug */ = {
+		403CCE6623EB6567000B81D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -459,7 +405,7 @@
 			};
 			name = Debug;
 		};
-		4053863623DA2C8B003182B4 /* Release */ = {
+		403CCE6723EB6567000B81D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -484,34 +430,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4053860E23DA2C87003182B4 /* Build configuration list for PBXProject "LED BLE Controller" */ = {
+		403CCE4223EB6562000B81D0 /* Build configuration list for PBXProject "LED BLE Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4053862F23DA2C8B003182B4 /* Debug */,
-				4053863023DA2C8B003182B4 /* Release */,
+				403CCE6023EB6567000B81D0 /* Debug */,
+				403CCE6123EB6567000B81D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4053863123DA2C8B003182B4 /* Build configuration list for PBXNativeTarget "LED BLE Controller" */ = {
+		403CCE6223EB6567000B81D0 /* Build configuration list for PBXNativeTarget "LED BLE Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4053863223DA2C8B003182B4 /* Debug */,
-				4053863323DA2C8B003182B4 /* Release */,
+				403CCE6323EB6567000B81D0 /* Debug */,
+				403CCE6423EB6567000B81D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4053863423DA2C8B003182B4 /* Build configuration list for PBXNativeTarget "LED BLE ControllerTests" */ = {
+		403CCE6523EB6567000B81D0 /* Build configuration list for PBXNativeTarget "LED BLE ControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4053863523DA2C8B003182B4 /* Debug */,
-				4053863623DA2C8B003182B4 /* Release */,
+				403CCE6623EB6567000B81D0 /* Debug */,
+				403CCE6723EB6567000B81D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4053860B23DA2C87003182B4 /* Project object */;
+	rootObject = 403CCE3F23EB6562000B81D0 /* Project object */;
 }

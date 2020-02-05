@@ -2,19 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../backend/bluetooth_le/ble.swift">
-   </FileRef>
-   <Group
-      location = "group:../../backend/bluetooth_le"
-      name = "bluetooth_le">
-      <FileRef
-         location = "group:ble.swift">
-      </FileRef>
-      <FileRef
-         location = "group:main.swift">
-      </FileRef>
-   </Group>
-   <FileRef
-      location = "self:">
+      location = "self:LED BLE Controller.xcodeproj">
    </FileRef>
 </Workspace>
