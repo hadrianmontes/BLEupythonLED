@@ -12,6 +12,8 @@
 		403CCE4F23EB6566000B81D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE4E23EB6566000B81D0 /* Assets.xcassets */; };
 		403CCE5223EB6566000B81D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE5023EB6566000B81D0 /* Main.storyboard */; };
 		403CCE5E23EB6567000B81D0 /* LED_BLE_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */; };
+		403CCE6A23EB66F1000B81D0 /* ble_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCE6823EB66E8000B81D0 /* ble_backend.framework */; };
+		403CCE6B23EB66F1000B81D0 /* ble_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCE6823EB66E8000B81D0 /* ble_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		403CCE6C23EB66F1000B81D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				403CCE6B23EB66F1000B81D0 /* ble_backend.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		403CCE4723EB6562000B81D0 /* LED BLE Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LED BLE Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		403CCE4A23EB6562000B81D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +51,7 @@
 		403CCE5923EB6566000B81D0 /* LED BLE ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED BLE ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_BLE_ControllerTests.swift; sourceTree = "<group>"; };
 		403CCE5F23EB6567000B81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403CCE6823EB66E8000B81D0 /* ble_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_backend.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403CCE6A23EB66F1000B81D0 /* ble_backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +79,7 @@
 				403CCE4923EB6562000B81D0 /* LED BLE Controller */,
 				403CCE5C23EB6566000B81D0 /* LED BLE ControllerTests */,
 				403CCE4823EB6562000B81D0 /* Products */,
+				403CCE6823EB66E8000B81D0 /* ble_backend.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +124,7 @@
 				403CCE4323EB6562000B81D0 /* Sources */,
 				403CCE4423EB6562000B81D0 /* Frameworks */,
 				403CCE4523EB6562000B81D0 /* Resources */,
+				403CCE6C23EB66F1000B81D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +372,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,6 +396,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S4U8PU75XD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "LED BLE Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

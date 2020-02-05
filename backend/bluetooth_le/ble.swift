@@ -175,6 +175,13 @@ public class ULed{
         return characteristic!.value!
     }
 
+    public func write(service: String, characteristic: String, value: String){
+        let data = value.data(using: .ascii)
+        let w_characteristic = services[CBUUID(string: service)]![CBUUID(string: characteristic)]!
+        peripheral.writeValue(data!, for: w_characteristic!, type: .withResponse)
+
+    }
+
     public func read_all(){
         for service in services.keys{
             for characteristic in services[service]!.keys{

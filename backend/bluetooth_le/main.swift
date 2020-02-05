@@ -23,6 +23,8 @@ print(String(decoding: data1, as: UTF8.self))
 print(String(decoding: data2, as: UTF8.self))
 delegate.uled.read_all()
 print(delegate.uled.services)
+delegate.uled.write(service: "0001", characteristic: "0001", value: "2")
+sleep(2)
 
 
 
