@@ -706,28 +706,180 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="LED_BLE_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="504" height="306"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bci-3m-3WW">
-                                <rect key="frame" x="98" y="142" width="81" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="leQ-dn-5mO">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bci-3m-3WW">
+                                <rect key="frame" x="33" y="243" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="leQ-dn-5mO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="label" size="13"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="set_stop_mode:" target="XfG-lQ-9wD" id="Cgx-a3-IBR"/>
+                                </connections>
                             </button>
                             <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-pw-jHv">
-                                <rect key="frame" x="310" y="137" width="44" height="23"/>
+                                <rect key="frame" x="143" y="134" width="44" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="update_color2:" target="XfG-lQ-9wD" id="GgA-E3-7PQ"/>
+                                </connections>
                             </colorWell>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S90-Ev-3aX">
+                                <rect key="frame" x="143" y="243" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Still" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Rq-IO-i2k">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                    <connections>
+                                        <action selector="set_still_mode:" target="XfG-lQ-9wD" id="9jD-7T-nLX"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BmD-TS-JfJ">
+                                <rect key="frame" x="317" y="243" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Custom" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OZm-JN-U1w">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-9v-cqw">
+                                <rect key="frame" x="230" y="243" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Follow" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ksj-bN-SM8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="set_follow_mode:" target="XfG-lQ-9wD" id="fro-8U-KWF"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Z3-1h-B0v">
+                                <rect key="frame" x="67" y="137" width="70" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="5Wf-IZ-3g5">
+                                    <font key="font" metaFont="label" size="13"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMX-TG-OB6">
+                                <rect key="frame" x="143" y="181" width="44" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="update_color1:" target="XfG-lQ-9wD" id="r8K-uA-Pdj"/>
+                                </connections>
+                            </colorWell>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-qf-tuc">
+                                <rect key="frame" x="67" y="184" width="70" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ZIu-eO-p7Q">
+                                    <font key="font" metaFont="label" size="13"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJO-uW-aPU">
+                                <rect key="frame" x="18" y="20" width="99" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Bluetooth State" id="bFd-wT-V7W">
+                                    <font key="font" metaFont="label" size="13"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="et2-w1-7ZN">
+                                <rect key="frame" x="138" y="20" width="79" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ixf-F4-LeY">
+                                    <font key="font" metaFont="label" size="13"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lnx-js-MhY">
+                                <rect key="frame" x="211" y="174" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wcl-n8-KG0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="send_color:" target="XfG-lQ-9wD" id="yu7-8e-2s0"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-bz-6Ni">
+                                <rect key="frame" x="211" y="129" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LYY-Tm-6pQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="send_color:" target="XfG-lQ-9wD" id="p98-2b-UTC"/>
+                                </connections>
+                            </button>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="td8-mT-uxP">
+                                <rect key="frame" x="67" y="63" width="96" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" minValue="-2" doubleValue="-1" tickMarkPosition="above" numberOfTickMarks="3" sliderType="linear" id="KNd-Ny-uOQ"/>
+                                <connections>
+                                    <action selector="send_timer:" target="XfG-lQ-9wD" id="Kd4-Yf-zRZ"/>
+                                </connections>
+                            </slider>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dul-Nn-k21">
+                                <rect key="frame" x="368" y="13" width="122" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Connect!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cxP-M0-WV1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="13"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="connect:" target="XfG-lQ-9wD" id="qcp-u7-xHt"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="S90-Ev-3aX" firstAttribute="height" secondItem="bci-3m-3WW" secondAttribute="height" id="0w9-VX-53u"/>
+                            <constraint firstItem="BmD-TS-JfJ" firstAttribute="width" secondItem="S90-Ev-3aX" secondAttribute="width" id="3Lr-3R-CyC"/>
+                            <constraint firstItem="S90-Ev-3aX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bci-3m-3WW" secondAttribute="trailing" constant="35" id="9cV-DH-o11"/>
+                            <constraint firstItem="S90-Ev-3aX" firstAttribute="centerY" secondItem="bci-3m-3WW" secondAttribute="centerY" id="A3z-0w-mYk"/>
+                            <constraint firstItem="qC2-9v-cqw" firstAttribute="width" secondItem="bci-3m-3WW" secondAttribute="width" id="B9J-Zd-WKJ"/>
+                            <constraint firstItem="BmD-TS-JfJ" firstAttribute="height" secondItem="bci-3m-3WW" secondAttribute="height" id="Bld-3D-7lc"/>
+                            <constraint firstItem="qC2-9v-cqw" firstAttribute="height" secondItem="bci-3m-3WW" secondAttribute="height" id="Cpk-5M-v8b"/>
+                            <constraint firstItem="BmD-TS-JfJ" firstAttribute="leading" secondItem="qC2-9v-cqw" secondAttribute="trailing" constant="12" id="PgS-1V-f6g"/>
+                            <constraint firstItem="bci-3m-3WW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="35" id="cKY-nL-UxJ"/>
+                            <constraint firstItem="qC2-9v-cqw" firstAttribute="width" secondItem="S90-Ev-3aX" secondAttribute="width" id="czs-bY-khm"/>
+                            <constraint firstItem="qC2-9v-cqw" firstAttribute="centerY" secondItem="BmD-TS-JfJ" secondAttribute="centerY" id="e8I-a3-A8L"/>
+                            <constraint firstItem="qC2-9v-cqw" firstAttribute="leading" secondItem="S90-Ev-3aX" secondAttribute="trailing" constant="12" id="k80-sB-jUt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BmD-TS-JfJ" secondAttribute="trailing" constant="106" id="oV1-y3-NcQ"/>
+                            <constraint firstItem="S90-Ev-3aX" firstAttribute="centerY" secondItem="qC2-9v-cqw" secondAttribute="centerY" id="wCP-Tv-M9Z"/>
+                            <constraint firstItem="bci-3m-3WW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="39" id="ziL-2b-PaI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="b_custom" destination="OZm-JN-U1w" id="st9-2U-EQ3"/>
+                        <outlet property="b_follow" destination="qC2-9v-cqw" id="aHo-My-l53"/>
+                        <outlet property="b_still" destination="S90-Ev-3aX" id="mZL-kP-rKq"/>
+                        <outlet property="b_stop" destination="bci-3m-3WW" id="9Jf-HL-f8j"/>
+                        <outlet property="bluetooth_state" destination="et2-w1-7ZN" id="zJM-t2-jah"/>
+                        <outlet property="buttotest" destination="S90-Ev-3aX" id="Kjg-c7-ayR"/>
+                        <outlet property="cbutton1" destination="Lnx-js-MhY" id="1N7-xE-vUH"/>
+                        <outlet property="cbutton2" destination="Fo1-bz-6Ni" id="acb-z2-QqD"/>
+                        <outlet property="clabel1" destination="qZt-qf-tuc" id="edc-n1-xOb"/>
+                        <outlet property="clabel2" destination="8Z3-1h-B0v" id="aEq-Wx-Xau"/>
+                        <outlet property="color" destination="F2E-pw-jHv" id="zDP-xG-QWO"/>
+                        <outlet property="color1" destination="RMX-TG-OB6" id="qhY-tA-ftr"/>
+                        <outlet property="color2" destination="F2E-pw-jHv" id="D5H-ja-vSf"/>
+                        <outlet property="connect_button" destination="Dul-Nn-k21" id="lbX-0w-0n7"/>
+                        <outlet property="l_color" destination="8Z3-1h-B0v" id="4eA-Uf-iTP"/>
+                        <outlet property="time_slider" destination="td8-mT-uxP" id="HfF-bC-7xy"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="673"/>
         </scene>
     </scenes>
 </document>

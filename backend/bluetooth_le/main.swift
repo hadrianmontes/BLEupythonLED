@@ -25,6 +25,7 @@ delegate.uled.read_all()
 print(delegate.uled.services)
 delegate.uled.write(service: "0001", characteristic: "0001", value: "2")
 sleep(2)
+print(delegate.state)
 
 
 

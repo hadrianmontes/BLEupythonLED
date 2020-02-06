@@ -21,6 +21,28 @@ public class UPythonCommunicator: NSObject{
         central_manager = CBCentralManager(delegate: self, queue:queue);
      }
 
+    public var state: String{
+        get{
+            switch central_manager.state {
+            case .unknown:
+                return "Unknown"
+            case .resetting:
+               return "Resseting"
+            case .unsupported:
+                return "Unsuported"
+            case .unauthorized:
+                return "Unnouthorized"
+            case .poweredOff:
+                return "Powered Off"
+            case .poweredOn:
+                return "Powered On"
+                print(queue.label)
+            @unknown default:
+                fatalError()
+            }
+        }
+    }
+
 
 
     public func scan()

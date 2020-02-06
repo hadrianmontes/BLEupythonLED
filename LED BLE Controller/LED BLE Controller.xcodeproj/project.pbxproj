@@ -12,8 +12,8 @@
 		403CCE4F23EB6566000B81D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE4E23EB6566000B81D0 /* Assets.xcassets */; };
 		403CCE5223EB6566000B81D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403CCE5023EB6566000B81D0 /* Main.storyboard */; };
 		403CCE5E23EB6567000B81D0 /* LED_BLE_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */; };
-		403CCE6A23EB66F1000B81D0 /* ble_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCE6823EB66E8000B81D0 /* ble_backend.framework */; };
-		403CCE6B23EB66F1000B81D0 /* ble_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCE6823EB66E8000B81D0 /* ble_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		406D3D1823EC648B00F67008 /* ble_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406D3D1623EC648700F67008 /* ble_backend.framework */; };
+		406D3D1923EC648B00F67008 /* ble_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 406D3D1623EC648700F67008 /* ble_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				403CCE6B23EB66F1000B81D0 /* ble_backend.framework in Embed Frameworks */,
+				406D3D1923EC648B00F67008 /* ble_backend.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,7 @@
 		403CCE5923EB6566000B81D0 /* LED BLE ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED BLE ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		403CCE5D23EB6567000B81D0 /* LED_BLE_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_BLE_ControllerTests.swift; sourceTree = "<group>"; };
 		403CCE5F23EB6567000B81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		403CCE6823EB66E8000B81D0 /* ble_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_backend.framework; sourceTree = "<group>"; };
+		406D3D1623EC648700F67008 /* ble_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_backend.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				403CCE6A23EB66F1000B81D0 /* ble_backend.framework in Frameworks */,
+				406D3D1823EC648B00F67008 /* ble_backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 				403CCE4923EB6562000B81D0 /* LED BLE Controller */,
 				403CCE5C23EB6566000B81D0 /* LED BLE ControllerTests */,
 				403CCE4823EB6562000B81D0 /* Products */,
-				403CCE6823EB66E8000B81D0 /* ble_backend.framework */,
+				406D3D1623EC648700F67008 /* ble_backend.framework */,
 			);
 			sourceTree = "<group>";
 		};
