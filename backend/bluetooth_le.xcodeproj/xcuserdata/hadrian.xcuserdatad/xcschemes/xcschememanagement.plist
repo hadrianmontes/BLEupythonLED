@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>ble_ios_backend.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>bluetooth_le.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>403811C423EA204600213EC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40AD54AA23EDD14E009116EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

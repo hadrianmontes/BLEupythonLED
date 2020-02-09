@@ -170,6 +170,7 @@ class ViewController: NSViewController {
         }
         else{
             b_stop.isEnabled = true
+            color1.isEnabled = true
         }
     }
 }
