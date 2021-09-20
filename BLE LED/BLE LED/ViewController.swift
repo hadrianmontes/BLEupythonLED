@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ble_ios_backend
 
 class ViewController: UIViewController {
 

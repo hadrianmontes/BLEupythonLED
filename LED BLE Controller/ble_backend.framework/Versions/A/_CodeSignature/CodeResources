@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		iHvctEWF7jz7q++jKgAEw99BO7g=
+		eZsGM9LGWXUX9nV/laFL/z0e5Es=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,7 +15,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cLt71cavIWUsmI0DGQHeT0B0q16/JAFlMUnvn84dFQ=
+			tr8fW3vEQJOBN2t2hFOIewthNhX6OmTabMyFb8iFcEM=
 			</data>
 		</dict>
 		<key>Headers/ble_backend.h</key>
@@ -25,32 +25,46 @@
 			WknLZwOpSP+PtGDD7eVsmNsFNELpuGQD1jiBTv+dxq4=
 			</data>
 		</dict>
+		<key>Modules/ble_backend.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rszt83ZMLbEbVvypRaxGraOXZocFzdMb7PdRfwWfY+E=
+			</data>
+		</dict>
+		<key>Modules/ble_backend.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rszt83ZMLbEbVvypRaxGraOXZocFzdMb7PdRfwWfY+E=
+			</data>
+		</dict>
 		<key>Modules/ble_backend.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHH6hlvSgU/4++rQOxDv9j2812vOgpsGb/g625pIvdI=
+			bb7/tXsXx6uds6Op4h6QVs74Z3eK3QuaruuLuelvHGE=
 			</data>
 		</dict>
 		<key>Modules/ble_backend.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VURXijWxYEStYmhI63/Q5m27IRhJqMznGi9zzioNWww=
+			+GbvrWFgUd4RAJtPvf3ROjAYvp2/vxjvPmxorqRooTA=
 			</data>
 		</dict>
 		<key>Modules/ble_backend.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHH6hlvSgU/4++rQOxDv9j2812vOgpsGb/g625pIvdI=
+			bb7/tXsXx6uds6Op4h6QVs74Z3eK3QuaruuLuelvHGE=
 			</data>
 		</dict>
 		<key>Modules/ble_backend.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VURXijWxYEStYmhI63/Q5m27IRhJqMznGi9zzioNWww=
+			+GbvrWFgUd4RAJtPvf3ROjAYvp2/vxjvPmxorqRooTA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -64,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HSM3MdGYJVXCM3jW5uG3WXOdUWxeINFWauWlvmluTek=
+			sYvU3BXtIzSM9cEhGuM+0DLQg6KtOQRJIkG0k9gapPw=
 			</data>
 		</dict>
 	</dict>

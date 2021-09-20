@@ -72,7 +72,7 @@ class LedServices():
         
     def main_loop(self):
         print("starting main")
-        self.fill_color((0, 0, 0))
+        self.fill_color((255, 0, 0))
         while self.characteristics[1][2].read() == b"0":
             utime.sleep(self.SLEEP)
         self.changemode()

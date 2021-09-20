@@ -3,15 +3,11 @@ import utime
 
 from led_services import LedServices
 
-INTERVAL = 10
-SDA = 15
-SCL = 4
 blue = bluetooth.Bluetooth()
 blue.active(True)
-blue.advertise(100, "uweather")
+blue.advertise(100, "uled")
 print("UHOLA")
-led = LedServices(blue, 30, 4)
+led = LedServices(blue, 30, 27)
 print("hola")
 
 led.main_loop()
-

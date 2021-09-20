@@ -14,8 +14,7 @@
 		40AD548923EDCF8F009116EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AD548823EDCF8F009116EB /* Assets.xcassets */; };
 		40AD548C23EDCF8F009116EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AD548A23EDCF8F009116EB /* LaunchScreen.storyboard */; };
 		40AD549723EDCF90009116EB /* BLE_LEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD549623EDCF90009116EB /* BLE_LEDTests.swift */; };
-		40BFCE0323EF3A1200028A12 /* ble_ios_backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BFCE0123EF3A0E00028A12 /* ble_ios_backend.framework */; };
-		40BFCE0423EF3A1200028A12 /* ble_ios_backend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40BFCE0123EF3A0E00028A12 /* ble_ios_backend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40C18ECB23F15D3E001513C2 /* ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C18ECA23F15D3E001513C2 /* ble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		40AD54A523EDD090009116EB /* Embed Frameworks */ = {
+		40F9676023F15C2900D97337 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				40BFCE0423EF3A1200028A12 /* ble_ios_backend.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +52,7 @@
 		40AD549223EDCF90009116EB /* BLE LEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE LEDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AD549623EDCF90009116EB /* BLE_LEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_LEDTests.swift; sourceTree = "<group>"; };
 		40AD549823EDCF90009116EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40BFCE0123EF3A0E00028A12 /* ble_ios_backend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ble_ios_backend.framework; sourceTree = "<group>"; };
+		40C18ECA23F15D3E001513C2 /* ble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ble.swift; path = ../../backend/bluetooth_le/ble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BFCE0323EF3A1200028A12 /* ble_ios_backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +79,6 @@
 				40AD547E23EDCF8B009116EB /* BLE LED */,
 				40AD549523EDCF90009116EB /* BLE LEDTests */,
 				40AD547D23EDCF8B009116EB /* Products */,
-				40BFCE0123EF3A0E00028A12 /* ble_ios_backend.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +94,7 @@
 		40AD547E23EDCF8B009116EB /* BLE LED */ = {
 			isa = PBXGroup;
 			children = (
+				40C18ECA23F15D3E001513C2 /* ble.swift */,
 				40AD547F23EDCF8B009116EB /* AppDelegate.swift */,
 				40AD548123EDCF8B009116EB /* SceneDelegate.swift */,
 				40AD548323EDCF8B009116EB /* ViewController.swift */,
@@ -128,7 +125,7 @@
 				40AD547823EDCF8B009116EB /* Sources */,
 				40AD547923EDCF8B009116EB /* Frameworks */,
 				40AD547A23EDCF8B009116EB /* Resources */,
-				40AD54A523EDD090009116EB /* Embed Frameworks */,
+				40F9676023F15C2900D97337 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,7 +161,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Hadrián Montes Campos";
 				TargetAttributes = {
 					40AD547B23EDCF8B009116EB = {
@@ -223,6 +220,7 @@
 				40AD548423EDCF8B009116EB /* ViewController.swift in Sources */,
 				40AD548023EDCF8B009116EB /* AppDelegate.swift in Sources */,
 				40AD548223EDCF8B009116EB /* SceneDelegate.swift in Sources */,
+				40C18ECB23F15D3E001513C2 /* ble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +288,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -314,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,6 +349,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -368,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

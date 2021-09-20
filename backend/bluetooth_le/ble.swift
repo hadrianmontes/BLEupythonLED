@@ -128,7 +128,7 @@ extension UPythonCommunicator: CBCentralManagerDelegate{
 
     public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         print(peripheral)
-        if peripheral.name == "uweather" || peripheral.name == "ESP32" {
+        if peripheral.name == "uled" || peripheral.name == "ESP32" {
             self.uled.peripheral = peripheral
             self.uled.peripheral.delegate = self
             central.stopScan()
